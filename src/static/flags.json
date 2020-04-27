@@ -1,0 +1,64 @@
+{
+    "flags": [
+        {
+            "title": "What country is this flag?",
+            "answer": "Bolivia",
+            "src": "../images/bolivia.gif",
+            "type": "image"
+        },
+        {
+            "title": "What country is this flag?",
+            "answer": "Peru",
+            "src": "../images/peru.png",
+            "type": "image"
+        },
+        {
+            "title": "What country is this flag?",
+            "answer": "Cameron",
+            "src": "../images/cameron.png",
+            "type": "image"
+        },
+        {
+            "title": "What country is this flag?",
+            "answer": "Kazakhstan",
+            "src": "../images/Kazakhstan.png",
+            "type": "image"
+        },
+        {
+            "title": "What country is this flag?",
+            "answer": "Iceland",
+            "src": "../images/iceland.jpg",
+            "type": "image"
+        },
+        {
+            "title": "What country is this flag?",
+            "answer": "Cambodia",
+            "src": "../images/cambodia.gif",
+            "type": "image"
+        },
+        {
+            "title": "What country is this flag?",
+            "answer": "Slovenia",
+            "src": "../images/slovenia.png",
+            "type": "image"
+        },
+        {
+            "title": "What country is this flag?",
+            "answer": "Brazil",
+            "src": "../images/brazil.png",
+            "type": "image"
+        },
+        {
+            "title": "What country is this flag?",
+            "answer": "Morocco",
+            "src": "../images/morocco.gif",
+            "type": "image"
+        },
+        {
+            "title": "What country is this flag?",
+            "answer": "Uganda",
+            "src": "../images/uganda.gif",
+            "type": "image"
+        }
+    ]
+}

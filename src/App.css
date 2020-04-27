@@ -1,38 +1,98 @@
-.App {
+.quiz-app {
+  width: 1000px;
+  margin: 0 auto;
+  display:block;
+  position: relative;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.ticker {
+  font-size: 26px;
+  margin: 10px 0 0 0;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.lower-nav {
+  margin-top: 30px;
+  font-size: 20px;
+  margin-left: 20px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.lower-nav span {
+  margin-right: 5px;
 }
 
-.App-link {
-  color: #61dafb;
+.lower-nav a{
+  text-decoration: none;
+  color: #000;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.lower-nav a.active {
+  border-bottom: 2px solid #000;
 }
+
+h1 {
+  font-size: 35px;
+  margin: 0;
+}
+
+ul {
+  list-style: none;
+  margin:0;
+  padding:0;
+}
+
+ul li {
+  display: inline-block;
+  margin-right: 20px;
+}
+
+#forward {
+  position: absolute;
+  right: 250px;
+}
+
+#back {
+  position: absolute;
+  left: 250px;
+}
+
+.top-bar {
+  width: 500px;
+  background: black;
+  position: absolute;
+  top: -10px;
+  left: 250px;
+  height: 70px;
+  z-index: 10;
+}
+
+.bottom-bar {
+  width: 500px;
+  background: black;
+  position: absolute;
+  top: 275px;
+  left: 250px;
+  height: 50px;
+  z-index: 10;
+}
+
+.video-container {
+  position: relative;
+  overflow: hidden;
+}
+
+.navigation-links a span {
+  margin-right: 5px;
+}
+
+.navigation-links a {
+  text-decoration: none;
+  color: black;
+}
+
+.hide {
+  display: none;
+}
+
+
+
