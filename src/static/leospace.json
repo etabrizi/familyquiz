@@ -55,7 +55,7 @@
             ]
         },
         {
-            "title": "What's the larget star of the universe?",
+            "title": "What's the largest star of the universe?",
             "answer": "UY Scuti or Canis Majoris",
             "src": "../images/star.jpg",
             "type": "image"
@@ -67,7 +67,7 @@
             "type": "image"
         },
         {
-            "title": "Are they're aliens on Mercury?",
+            "title": "Are there aliens on Mercury?",
             "answer": "no",
             "src": "../images/mercury.jpeg",
             "type": "image"
