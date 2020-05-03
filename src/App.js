@@ -1,8 +1,10 @@
 import React, { Component } from 'react';
-import Questions from './static/questions.json';
-import LeoSpaceQuestions from './static/leospace.json';
-import Songs from './static/songs.json';
+
+import SongsEighties from './static/80s-songs.json';
+import SongsNoughties from './static/00s-songs.json';
+import Films from './static/films.json';
 import Flags from './static/flags.json';
+
 import Links from './components/links';
 import QuizQuestion from './components/quizQuestion';
 import QuizJump from './components/quizJump';
@@ -13,14 +15,34 @@ import './App.css';
 class App extends Component {
 
   state = {
-    heading: 'Heading',
-    movies: Questions.questions,
-    leoSpaceQuestions: LeoSpaceQuestions.leospace,
-    songs: Songs.songs,
+    films: Films.films,
+    songsEighties: SongsEighties.songsEighties,
+    songsNoughties: SongsNoughties.songsNoughties,
     flags: Flags.flags,
-    currentSelection: 'movies',
+    currentSelection: 'songsEighties',
+    navigation: [{
+      id: 'songsEighties',
+      linkCopy: "80's songs",
+      icon: 'headphones'
+    },
+    {
+      id: 'songsNoughties',
+      linkCopy: "00's songs",
+      icon: 'headphones'
+    },
+    {
+      id: 'films',
+      linkCopy: "Films",
+      icon: 'video-camera'
+    },
+    {
+      id: 'flags',
+      linkCopy: 'Flags'
+    }
+    ],
     step: 0,
-    isChecked: false
+    isChecked: false,
+    stepperValue: ''
   }
 
   forward = (e) => {
@@ -57,14 +79,27 @@ class App extends Component {
     });
   }
 
+  updateStepper = (e) => {
+    e.preventDefault();
+    let numberValue = e.target.value;
+    this.setState((prevState, props) => {
+      return {
+        stepperValue: numberValue
+      }
+    })
+  }
+
   getJumpValue = (e) => {
     e.preventDefault();
     let numberValue = parseFloat(e.target.stepper.value);
-    this.setState((prevState, props) => {
-      return {
-        step: (numberValue - 1)
-      };
-    })
+    if (numberValue < this.state[this.state.currentSelection].length + 1) {
+      this.setState((prevState, props) => {
+        return {
+          step: (numberValue - 1),
+          stepperValue: ''
+        }
+      })
+    }
   }
 
   changeSelection = (e) => {
@@ -91,8 +126,9 @@ class App extends Component {
           answer={this.state[this.state.currentSelection][this.state.step].answer}
           isChecked={this.state.isChecked} />
         <Links forward={this.forward} back={this.back} />
-        <QuizJump getJumpValue={this.getJumpValue} />
+        <QuizJump getJumpValue={this.getJumpValue} stepperValue={this.state.stepperValue} updateStepper={this.updateStepper} />
         <Navigation
+          navigation={this.state.navigation}
           currentSelection={this.state.currentSelection}
           changeSelection={this.changeSelection}
           isChecked={this.state.isChecked}

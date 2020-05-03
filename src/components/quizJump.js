@@ -1,10 +1,10 @@
-import React from 'react';
+import React, { Fragment } from 'react';
 
-function QuizJump({ getJumpValue }) {
-    return <React.Fragment>
+function QuizJump({ getJumpValue, stepperValue, updateStepper }) {
+    return <Fragment>
         <form onSubmit={getJumpValue}>
-            <input type="text" name="stepper" />
+            <input type="text" name="stepper" onChange={updateStepper} value={stepperValue} />
         </form>
-    </React.Fragment>
+    </Fragment>
 }
 export default QuizJump;
