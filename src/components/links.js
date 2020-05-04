@@ -6,4 +6,4 @@ function Links({ forward, back }) {
         <a id="back" href="#" onClick={back}><span className="icon-circle-left"></span>back</a>
     </nav>
 }
-export default Links;
+export default React.memo(Links);
