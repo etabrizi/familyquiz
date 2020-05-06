@@ -1,10 +1,4 @@
 import React, { Component } from 'react';
-
-import SongsEighties from './static/80s-songs.json';
-import SongsNoughties from './static/00s-songs.json';
-import Films from './static/films.json';
-import Flags from './static/flags.json';
-
 import Links from './components/links';
 import QuizQuestion from './components/quizQuestion';
 import QuizJump from './components/quizJump';
@@ -15,39 +9,32 @@ import './App.css';
 class App extends Component {
 
   state = {
-    films: Films.films,
-    songsEighties: SongsEighties.songsEighties,
-    songsNoughties: SongsNoughties.songsNoughties,
-    flags: Flags.flags,
-    currentSelection: 'songsEighties',
-    navigation: [{
-      id: 'songsEighties',
-      linkCopy: "80's songs",
-      icon: 'headphones'
-    },
-    {
-      id: 'songsNoughties',
-      linkCopy: "00's songs",
-      icon: 'headphones'
-    },
-    {
-      id: 'films',
-      linkCopy: "Films",
-      icon: 'video-camera'
-    },
-    {
-      id: 'flags',
-      linkCopy: 'Flags'
-    }
+    currentSelection: 'films',
+    navigation: [
+      {
+        id: 'films',
+        linkCopy: "Films",
+        icon: 'video-camera'
+      },
+      {
+        id: 'flags',
+        linkCopy: 'Flags'
+      },
+      {
+        id: 'songsEighties',
+        linkCopy: "Eighties songs",
+        icon: 'headphones'
+      }
     ],
     step: 0,
+    questionsLength: null,
     isChecked: false,
     stepperValue: ''
   }
 
   forward = (e) => {
     e.preventDefault();
-    if (this.state.step !== this.state[this.state.currentSelection].length - 1) {
+    if (this.state.step !== (this.state.questionsLength - 1)) {
       this.setState((prevState, props) => {
         return {
           step: prevState.step + 1
@@ -92,7 +79,7 @@ class App extends Component {
   getJumpValue = (e) => {
     e.preventDefault();
     let numberValue = parseFloat(e.target.stepper.value);
-    if (numberValue < this.state[this.state.currentSelection].length + 1) {
+    if (numberValue < this.state.questionsLength + 1) {
       this.setState((prevState, props) => {
         return {
           step: (numberValue - 1),
@@ -113,18 +100,26 @@ class App extends Component {
     })
   }
 
+  setQuestionLength = (length) => {
+    if (length !== null) {
+      this.setState((prevState, props) => {
+        return {
+          questionsLength: length
+        };
+      })
+    }
+  }
+
 
   render() {
     return (
       <div className="quiz-app">
-        <p className="ticker"><strong>Question: </strong>{this.state.step + 1} / {this.state[this.state.currentSelection].length}</p>
+        <p className="ticker"><strong>Question: </strong>{this.state.step + 1}/ {this.state.questionsLength}</p>
         <QuizQuestion
-          title={this.state[this.state.currentSelection][this.state.step].title}
-          type={this.state[this.state.currentSelection][this.state.step].type}
-          src={this.state[this.state.currentSelection][this.state.step].src}
-          options={this.state[this.state.currentSelection][this.state.step].options}
-          answer={this.state[this.state.currentSelection][this.state.step].answer}
-          isChecked={this.state.isChecked} />
+          quizCategory={this.state.currentSelection}
+          step={this.state.step}
+          isChecked={this.state.isChecked}
+          setQuestionLength={this.setQuestionLength} />
         <Links forward={this.forward} back={this.back} />
         <QuizJump getJumpValue={this.getJumpValue} stepperValue={this.state.stepperValue} updateStepper={this.updateStepper} />
         <Navigation

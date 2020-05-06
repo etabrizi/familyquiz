@@ -1,0 +1,64 @@
+{
+    "clubs": [
+        {
+            "title": "What club is this?",
+            "answer": "Bristol City FC",
+            "src": "../images/bristol.png",
+            "type": "image"
+        },
+        {
+            "title": "What club is this?",
+            "answer": "Burnley FC",
+            "src": "../images/burnley_.png",
+            "type": "image"
+        },
+        {
+            "title": "What club is this?",
+            "answer": "Charlton",
+            "src": "../images/Charlton_.png",
+            "type": "image"
+        },
+        {
+            "title": "What club is this?",
+            "answer": "Coventry",
+            "src": "../images/coventry_.png",
+            "type": "image"
+        },
+        {
+            "title": "What club is this?",
+            "answer": "Middlesbrough",
+            "src": "../images/middlesbrough_.png",
+            "type": "image"
+        },
+        {
+            "title": "What club is this?",
+            "answer": "Northhampton",
+            "src": "../images/northampton.png",
+            "type": "image"
+        },
+        {
+            "title": "What club is this?",
+            "answer": "Reading",
+            "src": "../images/reading_.png",
+            "type": "image"
+        },
+        {
+            "title": "What club is this?",
+            "answer": "Lazio",
+            "src": "../images/lazio_.png",
+            "type": "image"
+        },
+        {
+            "title": "What club is this?",
+            "answer": "Benfica",
+            "src": "../images/benfica.png",
+            "type": "image"
+        },
+        {
+            "title": "What club is this?",
+            "answer": "Rapid Vienna",
+            "src": "../images/Rapid.png",
+            "type": "image"
+        }
+    ]
+}

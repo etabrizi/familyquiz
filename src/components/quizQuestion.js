@@ -1,12 +1,50 @@
-import React, { Fragment } from 'react';
+import React, { Fragment, useState, useEffect } from 'react';
 import Video from "./video";
 
-function QuizQuestion({ title, type, src, options, answer, isChecked }) {
-    return <Fragment>
-        <h1>{isChecked ? answer : title}</h1>
-        <h2 className={options ? '' : 'hide'}>
-            {options ? `A:${options[0]} B:${options[1]} C:${options[2]} D:${options[3]}` : ''}</h2>
-        {type === 'image' ? <img src={src} width={500} /> : <Video src={src} />}
-    </Fragment>
+
+
+function QuizQuestion({ step, quizCategory, isChecked, setQuestionLength }) {
+
+    const [error, setError] = useState(null);
+    const [isLoaded, setIsLoaded] = useState(false);
+    const [items, setItems] = useState([]);
+
+    useEffect(() => {
+        fetch(`./static/${quizCategory}.json`)
+            .then(res => res.json())
+            .then(
+                (results) => {
+                    setIsLoaded(true);
+                    setQuestionLength(results[quizCategory].length);
+                    setItems(results[quizCategory][step]);
+                },
+                (error) => {
+                    setIsLoaded(true);
+                    setError(error);
+                }
+            )
+    }, [step, quizCategory])
+
+    if (error) {
+        return <div>
+            <p>Sorry, There's been an issue loading in those quiz questions:</p>
+            <p>Error code: {error.message}</p>
+            <button onClick={() => { window.location.reload(false) }}>Reload Quiz</button>
+        </div>;
+    } else if (!isLoaded) {
+        return <div>Loading...</div>
+    } else {
+        return (
+            <Fragment>
+                <h1>{isChecked ? items.answer : items.title}</h1>
+                <h2 className={items.options ? '' : 'hide'}>
+                    {items.options ? `A:${items.options[0]} B:${items.options[1]} C:${items.options[2]} D:${items.options[3]}` : ''}</h2>
+                {items.type === 'image' ? <img src={items.src} width={500} /> : <Video src={items.src} />}
+            </Fragment >
+        );
+    }
 }
+
+
+
 export default QuizQuestion;
