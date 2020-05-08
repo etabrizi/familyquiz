@@ -23,7 +23,7 @@ function QuizQuestion({ step, quizCategory, isChecked, setQuestionLength }) {
                     setError(error);
                 }
             )
-    }, [step, quizCategory])
+    }, [step, quizCategory, setQuestionLength])
 
     if (error) {
         return <div>
@@ -39,7 +39,7 @@ function QuizQuestion({ step, quizCategory, isChecked, setQuestionLength }) {
                 <h1>{isChecked ? items.answer : items.title}</h1>
                 <h2 className={items.options ? '' : 'hide'}>
                     {items.options ? `A:${items.options[0]} B:${items.options[1]} C:${items.options[2]} D:${items.options[3]}` : ''}</h2>
-                {items.type === 'image' ? <img src={items.src} width={500} /> : <Video src={items.src} />}
+                {items.type === 'image' ? <img src={items.src} alt="quiz question" width={500} /> : <Video src={items.src} />}
             </Fragment >
         );
     }
