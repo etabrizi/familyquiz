@@ -30,6 +30,10 @@
   border-bottom: 2px solid #000;
 }
 
+.ytp-videowall-still {
+  display: none!important;
+}
+
 h1 {
   font-size: 35px;
   margin: 0;

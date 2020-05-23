@@ -1,0 +1,94 @@
+{
+    "famous": [
+        {
+            "title": "Who is this?",
+            "answer": "Philip Green",
+            "src": "../images/phil.jpg",
+            "type": "image"
+        },
+        {
+            "title": "Who is this?",
+            "answer": "Justin Bieber",
+            "src": "../images/justin.png",
+            "type": "image"
+        },
+        {
+            "title": "Who is this?",
+            "answer": "Brad Pitt",
+            "src": "../images/brad.jpg",
+            "type": "image"
+        },
+        {
+            "title": "Who is this?",
+            "answer": "Arianna Grande",
+            "src": "../images/Arianna.jpg",
+            "type": "image"
+        },
+        {
+            "title": "Who is this?",
+            "answer": "Andy Warhol",
+            "src": "../images/andy.jpg",
+            "type": "image"
+        },
+        {
+            "title": "Who is this?",
+            "answer": "Selena Gomez",
+            "src": "../images/selena.jpg",
+            "type": "image"
+        },
+        {
+            "title": "Who is this?",
+            "answer": "Julie Andrews",
+            "src": "../images/julie.jpg",
+            "type": "image"
+        },
+        {
+            "title": "Who is this?",
+            "answer": "Jean-Claude Juncker",
+            "src": "../images/jean.jpg",
+            "type": "image"
+        },
+        {
+            "title": "Who is this?",
+            "answer": "Ben Kingsley",
+            "src": "../images/ben.jpg",
+            "type": "image"
+        },
+        {
+            "title": "Who is this?",
+            "answer": "Gary Oldman",
+            "src": "../images/Gary.jpg",
+            "type": "image"
+        },
+        {
+            "title": "Who is this?",
+            "answer": "Liam Neesen",
+            "src": "../images/liam.jpg",
+            "type": "image"
+        },
+        {
+            "title": "Who is this?",
+            "answer": "Anthony Fauci",
+            "src": "../images/Fauci.jpeg",
+            "type": "image"
+        },
+        {
+            "title": "Who is this?",
+            "answer": "Miley Cyrus",
+            "src": "../images/miley.jpg",
+            "type": "image"
+        },
+        {
+            "title": "Who is this?",
+            "answer": "Micheal Phelps",
+            "src": "../images/michael.jpg",
+            "type": "image"
+        },
+        {
+            "title": "Who is this?",
+            "answer": "Mila Kunis",
+            "src": "../images/mila.jpg",
+            "type": "image"
+        }
+    ]
+}

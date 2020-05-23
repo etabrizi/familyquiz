@@ -1,0 +1,94 @@
+{
+    "chocolate": [
+        {
+            "title": "What chocolate bar is this?",
+            "answer": "Caramac",
+            "src": "../images/caramac.png",
+            "type": "image"
+        },
+        {
+            "title": "What chocolate bar is this?",
+            "answer": "Chomp",
+            "src": "../images/chomp.png",
+            "type": "image"
+        },
+        {
+            "title": "What chocolate bar is this?",
+            "answer": "Double Decker",
+            "src": "../images/double-decker.png",
+            "type": "image"
+        },
+        {
+            "title": "What chocolate bar is this?",
+            "answer": "Drifter",
+            "src": "../images/drifter.png",
+            "type": "image"
+        },
+        {
+            "title": "What chocolate bar is this?",
+            "answer": "Flake",
+            "src": "../images/flake.png",
+            "type": "image"
+        },
+        {
+            "title": "What chocolate bar is this?",
+            "answer": "Kit Kat",
+            "src": "../images/kit-kat.png",
+            "type": "image"
+        },
+        {
+            "title": "What chocolate bar is this?",
+            "answer": "Lion",
+            "src": "../images/lion-bar.png",
+            "type": "image"
+        },
+        {
+            "title": "What chocolate bar is this?",
+            "answer": "Mars",
+            "src": "../images/mars.png",
+            "type": "image"
+        },
+        {
+            "title": "What chocolate bar is this?",
+            "answer": "Milky bar",
+            "src": "../images/milky.png",
+            "type": "image"
+        },
+        {
+            "title": "What chocolate bar is this?",
+            "answer": "Bounty",
+            "src": "../images/bounty.png",
+            "type": "image"
+        },
+        {
+            "title": "What chocolate bar is this?",
+            "answer": "Terrys chocolate orange",
+            "src": "../images/terrys.png",
+            "type": "image"
+        },
+        {
+            "title": "What chocolate bar is this?",
+            "answer": "Fingers",
+            "src": "../images/fingers.png",
+            "type": "image"
+        },
+        {
+            "title": "What chocolate bar is this?",
+            "answer": "Wispa",
+            "src": "../images/wispa.png",
+            "type": "image"
+        },
+        {
+            "title": "What chocolate bar is this?",
+            "answer": "Yorkie",
+            "src": "../images/yorkie.png",
+            "type": "image"
+        },
+        {
+            "title": "What chocolate bar is this?",
+            "answer": "Snickers",
+            "src": "../images/snickers.png",
+            "type": "image"
+        }
+    ]
+}

@@ -1,0 +1,64 @@
+{
+    "flagsB": [
+        {
+            "title": "What country is this flag?",
+            "answer": "Bosnia",
+            "src": "../images/bosnia.png",
+            "type": "image"
+        },
+        {
+            "title": "What country is this flag?",
+            "answer": "Portugal",
+            "src": "../images/portugal.png",
+            "type": "image"
+        },
+        {
+            "title": "What country is this flag?",
+            "answer": "Switzerland",
+            "src": "../images/swiss.png",
+            "type": "image"
+        },
+        {
+            "title": "What country is this flag?",
+            "answer": "Chile",
+            "src": "../images/chile.gif",
+            "type": "image"
+        },
+        {
+            "title": "What country is this flag?",
+            "answer": "Mexico",
+            "src": "../images/mexico.jpg",
+            "type": "image"
+        },
+        {
+            "title": "What country is this flag?",
+            "answer": "Thailand",
+            "src": "../images/thailand.png",
+            "type": "image"
+        },
+        {
+            "title": "What country is this flag?",
+            "answer": "South Africa",
+            "src": "../images/southafrica.gif",
+            "type": "image"
+        },
+        {
+            "title": "What country is this flag?",
+            "answer": "Serbia",
+            "src": "../images/serbia.png",
+            "type": "image"
+        },
+        {
+            "title": "What country is this flag?",
+            "answer": "Morocco",
+            "src": "../images/morocco.gif",
+            "type": "image"
+        },
+        {
+            "title": "What country is this flag?",
+            "answer": "Boliva",
+            "src": "../images/boliva.jpg",
+            "type": "image"
+        }
+    ]
+}

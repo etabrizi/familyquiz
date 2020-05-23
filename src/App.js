@@ -9,21 +9,20 @@ import './App.css';
 class App extends Component {
 
   state = {
-    currentSelection: 'films',
+    currentSelection: 'tv',
     navigation: [
       {
-        id: 'films',
-        linkCopy: "Films",
+        id: 'tv',
+        linkCopy: "TV shows",
         icon: 'video-camera'
       },
       {
-        id: 'flags',
-        linkCopy: 'Flags'
+        id: 'chocolate',
+        linkCopy: 'Chocolate bars'
       },
       {
-        id: 'songsEighties',
-        linkCopy: "Eighties songs",
-        icon: 'headphones'
+        id: 'cars',
+        linkCopy: 'Cars'
       }
     ],
     step: 0,
