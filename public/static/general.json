@@ -1,0 +1,94 @@
+{
+    "general": [
+        {
+            "title": "What is the best selling flavour of soup in the UK?",
+            "answer": "Tomato",
+            "src": "../images/soup.jpg",
+            "type": "image"
+        },
+        {
+            "title": "How many calories does a glass of water contain?",
+            "answer": "Zero",
+            "src": "../images/glass.jpg",
+            "type": "image"
+        },
+        {
+            "title": "How many bottles of champagne are there in a magnum?",
+            "answer": "2",
+            "src": "../images/champagne.jpg",
+            "type": "image"
+        },
+        {
+            "title": "Which bread ingredient causes it to rise?",
+            "answer": "Yeast",
+            "src": "../images/bread.jpg",
+            "type": "image"
+        },
+        {
+            "title": "Deer meat is known by what name?",
+            "answer": "Venison",
+            "src": "../images/bambi.png",
+            "type": "image"
+        },
+        {
+            "title": "In the board game Risk, what colour is Europe?",
+            "answer": "Blue",
+            "src": "../images/risk.jpeg",
+            "type": "image"
+        },
+        {
+            "title": "In Britain what shape is the road sign Stop?",
+            "answer": "Octagonal",
+            "src": "../images/stop.jpg",
+            "type": "image"
+        },
+        {
+            "title": "How many dots are there in total on a pair of dice?",
+            "answer": "42",
+            "src": "../images/dice.jpeg",
+            "type": "image"
+        },
+        {
+            "title": "What starts with `T`, ends with `T` and has `T` in it?",
+            "answer": "Teapot",
+            "src": "../images/t.jpg",
+            "type": "image"
+        },
+        {
+            "title": "What's the name of the river that runs through Egypt?",
+            "answer": "The Nile",
+            "src": "../images/nile.jpg",
+            "type": "image"
+        },
+        {
+            "title": "What year did World War II end?",
+            "answer": "1945",
+            "src": "../images/war.jpg",
+            "type": "image"
+        },
+        {
+            "title": "What brand is this from?",
+            "answer": "Bic",
+            "src": "../images/bic.jpg",
+            "type": "image"
+        },
+        {
+            "title": "What five colours are the Olympic rings?",
+            "answer": "Blue, yellow, black, green and red",
+            "src": "../images/games.jpg",
+            "type": "image"
+        },
+        {
+            "title": "How many wives did Henry VIII have?",
+            "answer": "6",
+            "src": "../images/hen.jpeg",
+            "type": "image"
+        },
+        {
+            "title": "What element does 'O' represent on the periodic table?",
+            "answer": "Oxygen",
+            "src": "../images/chem.jpg",
+            "type": "image"
+        }
+    ]
+}

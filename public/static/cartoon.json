@@ -1,0 +1,94 @@
+{
+    "cartoon": [
+        {
+            "title": "What character is this?",
+            "answer": "Bewitched",
+            "src": "../images/bewitched.jpg",
+            "type": "image"
+        },
+        {
+            "title": "What character is this?",
+            "answer": "Captain Planet",
+            "src": "../images/captainPlanet.jpg",
+            "type": "image"
+        },
+        {
+            "title": "What character is this?",
+            "answer": "Bag Puss",
+            "src": "../images/bagpuss.jpg",
+            "type": "image"
+        },
+        {
+            "title": "What character is this?",
+            "answer": "Dr Seuss",
+            "src": "../images/DrSeuss.jpg",
+            "type": "image"
+        },
+        {
+            "title": "What character is this?",
+            "answer": "Marowak",
+            "src": "../images/marowak.jpg",
+            "type": "image"
+        },
+        {
+            "title": "What character is this?",
+            "answer": "Mr Benn",
+            "src": "../images/mrbenn.jpg",
+            "type": "image"
+        },
+        {
+            "title": "What character is this?",
+            "answer": "Popeye",
+            "src": "../images/popeye.jpg",
+            "type": "image"
+        },
+        {
+            "title": "What character is this?",
+            "answer": "Tinky Winky",
+            "src": "../images/tinky.png",
+            "type": "image"
+        },
+        {
+            "title": "What character is this?",
+            "answer": "Tony the tiger",
+            "src": "../images/tony.jpg",
+            "type": "image"
+        },
+        {
+            "title": "What character is this?",
+            "answer": "Shredder",
+            "src": "../images/shredder.png",
+            "type": "image"
+        },
+        {
+            "title": "What character is this?",
+            "answer": "Charamander",
+            "src": "../images/charamander.jpg",
+            "type": "image"
+        },
+        {
+            "title": "What character is this?",
+            "answer": "Dick Dastardly",
+            "src": "../images/DickD.png",
+            "type": "image"
+        },
+        {
+            "title": "What character is this?",
+            "answer": "Woody",
+            "src": "../images/woody.jpg",
+            "type": "image"
+        },
+        {
+            "title": "What character is this?",
+            "answer": "Pokry Pig",
+            "src": "../images/Porky.png",
+            "type": "image"
+        },
+        {
+            "title": "What character is this?",
+            "answer": "Vegeta",
+            "src": "../images/Vegeta.png",
+            "type": "image"
+        }
+    ]
+}
